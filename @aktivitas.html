@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Aktivitas</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #660f69;
+        }
+
+        .header input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        /* Card Styling for Activities */
+        .activity-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .activity-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .activity-card h3 {
+            color: #660f69;
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .activity-card p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+
+        .activity-card span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .activity-card a {
+            color: #660f69;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+            align-self: flex-end;
+        }
+
+        .activity-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .activity-card {
+                width: calc(50% - 20px);
+            }
+
+            .header input {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .activity-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Daftar Aktivitas</h1>
+            <input type="text" placeholder="Cari Aktivitas...">
+        </div>
+
+        <!-- Activity List -->
+        <div class="activity-list">
+            <!-- Activity Card 1 -->
+            <div class="activity-card">
+                <h3>Perkuliahan Daring 1</h3>
+                <p>Topik: Pengenalan Sistem Informasi</p>
+                <p>Tanggal: <span>Senin, 15 Januari 2025</span></p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="activity-card">
+                <h3>Seminar Teknologi</h3>
+                <p>Topik: Transformasi Digital</p>
+                <p>Tanggal: <span>Rabu, 20 Februari 2025</span></p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="activity-card">
+                <h3>Workshop UX/UI</h3>
+                <p>Topik: Dasar-dasar Desain Antarmuka</p>
+                <p>Tanggal: <span>Sabtu, 5 Maret 2025</span></p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <!-- Activity Card 4 -->
+            <div class="activity-card">
+                <h3>Ujian Tengah Semester</h3>
+                <p>Topik: Seluruh Materi Bab 1-5</p>
+                <p>Tanggal: <span>Kamis, 10 Maret 2025</span></p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <!-- Activity Card 5 -->
+            <div class="activity-card">
+                <h3>Presentasi Kelompok</h3>
+                <p>Topik: Studi Kasus Sistem ERP</p>
+                <p>Tanggal: <span>Selasa, 22 Maret 2025</span></p>
+                <a href="#">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

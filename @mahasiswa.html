@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Mahasiswa</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #4a148c;
+        }
+
+        .header input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4a148c;
+            color: #ffffff;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .status.active {
+            background-color: #4caf50; /* Green */
+        }
+
+        .status.inactive {
+            background-color: #f44336; /* Red */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header input {
+                width: 100%;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Daftar Mahasiswa</h1>
+            <input type="text" placeholder="Cari Mahasiswa...">
+        </div>
+
+        <!-- Mahasiswa Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>NIM</th>
+                    <th>Kelas</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Mahasiswa 1 -->
+                <tr>
+                    <td>1</td>
+                    <td>Ahmad Hidayat</td>
+                    <td>2100123456</td>
+                    <td>SI-3A</td>
+                    <td><span class="status active">Aktif</span></td>
+                </tr>
+                <!-- Mahasiswa 2 -->
+                <tr>
+                    <td>2</td>
+                    <td>Siti Nurhaliza</td>
+                    <td>2100456789</td>
+                    <td>SI-3B</td>
+                    <td><span class="status inactive">Tidak Aktif</span></td>
+                </tr>
+                <!-- Mahasiswa 3 -->
+                <tr>
+                    <td>3</td>
+                    <td>Bagas Permana</td>
+                    <td>2100789012</td>
+                    <td>SI-3C</td>
+                    <td><span class="status active">Aktif</span></td>
+                </tr>
+                <!-- Mahasiswa 4 -->
+                <tr>
+                    <td>4</td>
+                    <td>Lina Anggraini</td>
+                    <td>2100111223</td>
+                    <td>SI-3A</td>
+                    <td><span class="status inactive">Tidak Aktif</span></td>
+                </tr>
+                <!-- Mahasiswa 5 -->
+                <tr>
+                    <td>5</td>
+                    <td>Rahmat Pratama</td>
+                    <td>2100567890</td>
+                    <td>SI-3B</td>
+                    <td><span class="status active">Aktif</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

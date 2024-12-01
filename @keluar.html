@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Keluar</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .logout-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logout-container h1 {
+            color: #4a148c;
+            margin-bottom: 20px;
+        }
+
+        .logout-container p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .logout-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a148c;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-container a:hover {
+            background-color: #660f69;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-container">
+        <h1>Anda yakin ingin keluar?</h1>
+        <p>Pastikan semua pekerjaan sudah disimpan sebelum keluar.</p>
+        <a href="login.html" onclick="logout()">Keluar</a>
+    </div>
+
+    <script>
+        // Fungsi Logout
+        function logout() {
+            // Contoh: Hapus data session atau token pengguna
+            alert('Anda telah berhasil logout.');
+            // Setelah logout, arahkan ke halaman login
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

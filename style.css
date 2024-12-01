@@ -1,0 +1,268 @@
+.dashboard-container {
+    background-color: rgba(232, 243, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px 20px;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-title {
+    color:blue ;
+    font: 700 40px Inter, sans-serif;
+  }
+  
+  .search-wrapper {
+    border-radius: 7px;
+    display: flex;
+    width: 325px;
+    min-width: 240px;
+  }
+  
+  .search-input {
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 11px 33px;
+    border: 1px solid rgba(0, 82, 180, 1);
+    width: 100%;
+    color: rgba(138, 138, 138, 1);
+    font: 600 11px Open Sans, sans-serif;
+  }
+  
+  .main-content {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    border-radius: 5px;
+    background-color: blue;
+    display: flex;
+    min-height: 883px;
+    width: 24%;
+    flex-direction: column;
+    padding: 47px 0;
+  }
+  
+  .nav-item {
+    color: #fff;
+    font: 700 20px Inter, sans-serif;
+    padding: 19px 70px;
+  }
+
+  .nav-item:hover {
+    background-color: blue;
+  }
+
+  .nav-item-settings {
+    color: blue;
+  }
+  
+  .nav-item-logout {
+    color: rgba(255, 188, 151, 1);
+  }
+  
+  .content-wrapper {
+    width: 76%;
+  }
+  
+  .welcome-banner {
+    border-radius: 5px;
+    background-color: blue;
+    display: flex;
+    padding: 25px 44px;
+    color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .welcome-banner img {
+    margin-top: 50px;
+  }
+  
+  .welcome-text {
+    flex-grow: 1;
+    min-width: 200px;
+  }
+  
+  .welcome-heading {
+    font: 700 35px/41px Inter, sans-serif;
+    letter-spacing: -1.05px;
+  }
+
+  .welcome-description .progress {
+    line-height: 30px;
+  }
+  
+  .profile-image {
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .stats-grid {
+    display: flex;
+    margin-top: 10px;
+    gap: 21px;
+    flex-wrap: wrap;
+  }
+  
+  .stats-chart {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 18px 28px;
+    flex-grow: 1;
+  }
+  
+  .stats-title {
+    color: #2e3a59;
+    font: 700 19px/2 Inter, sans-serif;
+  }
+  
+  .stats-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .progress-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 19px 16px;
+    flex-grow: 1;
+  }
+  
+  .progress-title {
+    color: #272835;
+    font: 700 19px/1 Inter, sans-serif;
+  }
+  
+  .progress-list {
+    margin-top: 15px;
+  }
+  
+  .progress-item {
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    min-height: 70px;
+    padding: 13px;
+    margin-top: 5px;
+  }
+  
+  .progress-item:first-child {
+    margin-top: 0;
+  }
+  
+  .progress-name {
+    color: #272835;
+    font: 700 13px Inter, sans-serif;
+    padding-top: 15px;
+    line-height: 25px;
+  }
+  
+  .progress-detail {
+    color: blue;
+    font: 400 13px Inter, sans-serif;
+  }
+  
+  .document-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 18px 16px;
+    margin-top: 13px;
+  }
+  
+  .document-title {
+    color: #272835;
+    font: 700 18px/1 Inter, sans-serif;
+  }
+  
+  .document-list {
+    margin-top: 15px;
+  }
+  
+  .document-item {
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    min-height: 30px;
+    padding: 13px;
+    margin-top: 11px;
+    font: 15px Inter, sans-serif;
+  }
+  
+  .document-item:first-child {
+    margin-top: 0;
+  }
+  
+  .document-link {
+    color: blue;
+    text-decoration: underline;
+    line-height: 30px;
+  }
+  
+  @media (max-width: 991px) {
+    .dashboard-container {
+      padding: 0 20px;
+    }
+    
+    .header-wrapper,
+    .main-content,
+    .content-wrapper,
+    .welcome-banner,
+    .stats-chart,
+    .document-section {
+      max-width: 100%;
+    }
+    
+    .main-content {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 100px;
+    }
+    
+    .nav-item {
+      padding: 19px 20px;
+    }
+    
+    .content-wrapper {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .welcome-banner {
+      padding: 25px 20px;
+    }
+    
+    .stats-image {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .dashboard-container {
+      display: none;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }

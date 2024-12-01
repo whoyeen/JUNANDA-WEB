@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kelas</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #660f69;
+        }
+        .header input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        /* Table Section */
+        .table-section {
+            margin-top: 20px;
+        }
+        .table-section h3 {
+            color: #660f69;
+            margin-bottom: 15px;
+        }
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-section th, .table-section td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+        }
+        .table-section th {
+            background-color: #660f69;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .table-section tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table-section tr:hover {
+            background-color: #f1f1f1;
+        }
+        .table-section a {
+            color: #660f69;
+            text-decoration: none;
+        }
+        .table-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Daftar Kelas</h1>
+            <input type="text" placeholder="Cari Kelas...">
+        </div>
+
+        <!-- Tabel Kelas -->
+        <div class="table-section">
+            <h3>Data Kelas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Kelas</th>
+                        <th>Jumlah Mahasiswa</th>
+                        <th>Dosen Pengampu</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SI-3A</td>
+                        <td>35</td>
+                        <td>Dr. Rina Kusuma</td>
+                        <td>
+                            <a href="#">Lihat Detail</a> | 
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SI-3B</td>
+                        <td>30</td>
+                        <td>Prof. Ahmad Salim</td>
+                        <td>
+                            <a href="#">Lihat Detail</a> | 
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SI-3C</td>
+                        <td>28</td>
+                        <td>Dr. Widya Lestari</td>
+                        <td>
+                            <a href="#">Lihat Detail</a> | 
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>SI-3D</td>
+                        <td>25</td>
+                        <td>Dr. Bambang Satria</td>
+                        <td>
+                            <a href="#">Lihat Detail</a> | 
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>SI-3E</td>
+                        <td>20</td>
+                        <td>Dr. Siti Marlina</td>
+                        <td>
+                            <a href="#">Lihat Detail</a> | 
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
